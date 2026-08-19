@@ -1,6 +1,0 @@
-{
-  "name": "Wildlife Population Intelligence System",
-  "description": "An enterprise-grade AI-powered wildlife tracking and biodiversity analysis dashboard.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
