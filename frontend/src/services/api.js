@@ -1,13 +1,23 @@
 import axios from "axios";
 
-// Base URL comes from Vite env variable so it can differ between
-// local development and the deployed Render backend (set in Vercel env vars).
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api/v1";
+// Determine API URL: Use environment variable if present; in browser on Vercel, fallback to deployed backend
+const getDefaultApiUrl = () => {
+  if (import.meta.env.VITE_API_BASE_URL) {
+    return import.meta.env.VITE_API_BASE_URL;
+  }
+  if (typeof window !== "undefined" && window.location.hostname.includes("vercel.app")) {
+    return "https://wpis-backend.onrender.com/api/v1";
+  }
+  return "http://localhost:8000/api/v1";
+};
+
+const API_BASE_URL = getDefaultApiUrl();
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
+    "Bypass-Tunnel-Reminder": "true",
   },
 });
 
