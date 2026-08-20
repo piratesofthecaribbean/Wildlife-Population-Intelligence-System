@@ -1,0 +1,70 @@
+version: "3.9"
+
+# =========================================================
+# Wildlife Population Intelligence System - Local Dev Stack
+# Spins up PostgreSQL + FastAPI backend + React frontend.
+#
+# Usage:
+#   docker compose up --build
+#
+# Frontend : http://localhost:5173  (or http://localhost:80 for nginx build)
+# Backend  : http://localhost:8000/api/docs
+# Postgres : localhost:5432
+#
+# NOTE: In production, the frontend is deployed on Vercel and the
+# backend on Render — this compose file is for local dev/testing only.
+# =========================================================
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: wpis_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: wildlife_user
+      POSTGRES_PASSWORD: wildlife_pass
+      POSTGRES_DB: wildlife_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - wpis_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wildlife_user -d wildlife_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: wpis_backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: postgresql://wildlife_user:wildlife_pass@db:5432/wildlife_db
+      PORT: 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - wpis_uploads:/app/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: wpis_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  wpis_pgdata:
+  wpis_uploads:

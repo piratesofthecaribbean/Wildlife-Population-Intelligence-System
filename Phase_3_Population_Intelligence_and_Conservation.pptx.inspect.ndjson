@@ -1,0 +1,200 @@
+{"kind":"deck","id":"pr/em0zhz","name":"Deck"}
+{"kind":"layout","layoutId":"2e33e46d-ea30-4130-8020-4113ccc1c716","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1c922b89-4e4a-4d39-83b2-9a1c8fe6e6af","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/s3cpme","slide":1,"title":"WILDLIFE POPULATION","textShapes":4}
+{"kind":"shape","id":"sh/4nehwnu5","slide":1,"bbox":[0,0,650,720]}
+{"kind":"textbox","id":"sh/5o7ypsvq","slide":1,"text":"WILDLIFE POPULATION\nINTELLIGENCE SYSTEM","textPreview":"WILDLIFE POPULATION | INTELLIGENCE SYSTEM","textChars":39,"textLines":2,"bbox":[58,86,560,168]}
+{"kind":"textbox","id":"sh/q9gzyxcv","slide":1,"text":"Phase 3: Population Intelligence & Conservation","textPreview":"Phase 3: Population Intelligence & Conservation","textChars":47,"textLines":1,"bbox":[60,281,500,34]}
+{"kind":"shape","id":"sh/rapgr2dg","slide":1,"bbox":[60,348,170,0]}
+{"kind":"textbox","id":"sh/sbyh07u1","slide":1,"text":"New implementation • Weeks 5–6","textPreview":"New implementation • Weeks 5–6","textChars":30,"textLines":1,"bbox":[60,376,460,28]}
+{"kind":"textbox","id":"sh/dc7ytcvm","slide":1,"text":"Turning field observations into population insight and conservation action.","textPreview":"Turning field observations into population insight and conservation action.","textChars":75,"textLines":1,"bbox":[60,579,470,56]}
+{"kind":"image","id":"im/q5c7y98n","slide":1,"name":"","alt":"AI-generated Indian wildlife reserve landscape","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/s3cpme","slide":1,"text":"[Sources]\nCover visual generated with OpenAI image generation for this presentation; Phase 3 scope from user-provided project specification."}
+{"kind":"slide","id":"sl/vsu0ur","slide":2,"title":"PHASE 3 · WEEKS 5–6","textShapes":16}
+{"kind":"textbox","id":"sh/d836xgbu","slide":2,"text":"PHASE 3 · WEEKS 5–6","textPreview":"PHASE 3 · WEEKS 5–6","textChars":19,"textLines":1,"bbox":[48,29,500,20]}
+{"kind":"textbox","id":"sh/q5c721c3","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1175,29,55,20]}
+{"kind":"shape","id":"sh/r6lov6to","slide":2,"bbox":[48,57,1184,0]}
+{"kind":"textbox","id":"sh/43ap0rud","slide":2,"text":"What Phase 3 adds","textPreview":"What Phase 3 adds","textChars":17,"textLines":1,"bbox":[48,78,1120,56]}
+{"kind":"textbox","id":"sh/p4j6twby","slide":2,"text":"The platform now goes beyond detection: it estimates, evaluates, prioritizes, and alerts.","textPreview":"The platform now goes beyond detection: it estimates, evaluates, prioritizes, and alerts.","textChars":89,"textLines":1,"bbox":[48,142,1050,42]}
+{"kind":"textbox","id":"sh/21sny1c7","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[54,231,55,35]}
+{"kind":"shape","id":"sh/321ormts","slide":2,"bbox":[128,248,60,0]}
+{"kind":"textbox","id":"sh/gfa5wru1","slide":2,"text":"Population intelligence","textPreview":"Population intelligence","textChars":23,"textLines":1,"bbox":[208,228,390,30]}
+{"kind":"textbox","id":"sh/h0j6pwvm","slide":2,"text":"Species-level counts, density estimates, growth trends, and confidence views.","textPreview":"Species-level counts, density estimates, growth trends, and confidence views.","textChars":77,"textLines":1,"bbox":[208,270,620,52]}
+{"kind":"textbox","id":"sh/h8nydkrm","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[54,353,55,35]}
+{"kind":"shape","id":"sh/g7exkfq1","slide":2,"bbox":[128,370,60,0]}
+{"kind":"textbox","id":"sh/v65wba9w","slide":2,"text":"Habitat intelligence","textPreview":"Habitat intelligence","textChars":20,"textLines":1,"bbox":[208,350,390,30]}
+{"kind":"textbox","id":"sh/u5wfi58b","slide":2,"text":"Vegetation, water availability, human disturbance, and habitat-health monitoring.","textPreview":"Vegetation, water availability, human disturbance, and habitat-health monitoring.","textChars":81,"textLines":1,"bbox":[208,392,620,52]}
+{"kind":"textbox","id":"sh/t4ne90rq","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[54,475,55,35]}
+{"kind":"shape","id":"sh/83exgvq5","slide":2,"bbox":[128,492,60,0]}
+{"kind":"textbox","id":"sh/7i5w7q9k","slide":2,"text":"Conservation intelligence","textPreview":"Conservation intelligence","textChars":25,"textLines":1,"bbox":[208,472,390,30]}
+{"kind":"textbox","id":"sh/6hcfe5sz","slide":2,"text":"Weighted ecosystem scoring, prioritized action plans, and active alerts.","textPreview":"Weighted ecosystem scoring, prioritized action plans, and active alerts.","textChars":72,"textLines":1,"bbox":[208,514,620,52]}
+{"kind":"shape","id":"sh/lg3e50re","slide":2,"bbox":[900,226,288,328]}
+{"kind":"textbox","id":"sh/kfuxcva9","slide":2,"text":"PHASE 3\nOUTCOME","textPreview":"PHASE 3 | OUTCOME","textChars":15,"textLines":2,"bbox":[930,260,180,64]}
+{"kind":"textbox","id":"sh/wvip8zm1","slide":2,"text":"A clear view of population and ecosystem risk.","textPreview":"A clear view of population and ecosystem risk.","textChars":46,"textLines":1,"bbox":[930,350,220,108]}
+{"kind":"textbox","id":"sh/xwr6hk3m","slide":2,"text":"Operational endpoints + dashboard pages","textPreview":"Operational endpoints + dashboard pages","textChars":39,"textLines":1,"bbox":[930,507,220,24]}
+{"kind":"notes","id":"nt/vsu0ur","slide":2,"text":"[Sources]\nScope and outcomes from user-provided project specification; implementation confirmed in population, habitat, conservation, and alert service modules."}
+{"kind":"slide","id":"sl/rile3s","slide":3,"title":"PHASE 3 · WEEKS 5–6","textShapes":18}
+{"kind":"textbox","id":"sh/6xsfepcv","slide":3,"text":"PHASE 3 · WEEKS 5–6","textPreview":"PHASE 3 · WEEKS 5–6","textChars":19,"textLines":1,"bbox":[48,29,500,20]}
+{"kind":"textbox","id":"sh/t03y94bm","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1175,29,55,20]}
+{"kind":"shape","id":"sh/szaxgzu1","slide":3,"bbox":[48,57,1184,0]}
+{"kind":"textbox","id":"sh/f2lgbets","slide":3,"text":"One pipeline turns observations into action","textPreview":"One pipeline turns observations into action","textChars":43,"textLines":1,"bbox":[48,78,1120,56]}
+{"kind":"textbox","id":"sh/e1cfi9c7","slide":3,"text":"Phase 3 connects field evidence to management decisions through four implemented services.","textPreview":"Phase 3 connects field evidence to management decisions through four implemented services.","textChars":90,"textLines":1,"bbox":[48,142,1050,42]}
+{"kind":"shape","id":"sh/1o3yd4bi","slide":3,"bbox":[278,357,50,0]}
+{"kind":"shape","id":"sh/gnuhkjax","slide":3,"bbox":[572,357,50,0]}
+{"kind":"shape","id":"sh/v6hgzat8","slide":3,"bbox":[866,357,50,0]}
+{"kind":"shape","id":"sh/u58f65cn","slide":3,"bbox":[52,270,226,174]}
+{"kind":"textbox","id":"sh/wzqxkj2d","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,294,40,22]}
+{"kind":"textbox","id":"sh/xkzet43y","slide":3,"text":"Field evidence","textPreview":"Field evidence","textChars":14,"textLines":1,"bbox":[72,334,185,49]}
+{"kind":"textbox","id":"sh/ax8fi9kn","slide":3,"text":"Camera traps\n& habitat telemetry","textPreview":"Camera traps | & habitat telemetry","textChars":32,"textLines":2,"bbox":[72,402,185,34]}
+{"kind":"shape","id":"sh/byhwrels","slide":3,"bbox":[346,270,226,174]}
+{"kind":"textbox","id":"sh/knqxoj2p","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[366,294,40,22]}
+{"kind":"textbox","id":"sh/lojyxo3a","slide":3,"text":"Population\nmodel","textPreview":"Population | model","textChars":16,"textLines":2,"bbox":[366,334,185,49]}
+{"kind":"textbox","id":"sh/yl8fm9kj","slide":3,"text":"Counts • density\ntrends • corridors","textPreview":"Counts • density | trends • corridors","textChars":35,"textLines":2,"bbox":[366,402,185,34]}
+{"kind":"shape","id":"sh/jmhwvel4","slide":3,"bbox":[640,270,226,174]}
+{"kind":"textbox","id":"sh/0r6xcz25","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[660,294,40,22]}
+{"kind":"textbox","id":"sh/1sfelk3q","slide":3,"text":"Health\nassessment","textPreview":"Health | assessment","textChars":17,"textLines":2,"bbox":[660,334,185,49]}
+{"kind":"textbox","id":"sh/1o7upgvu","slide":3,"text":"Weighted ecosystem\nhealth score","textPreview":"Weighted ecosystem | health score","textChars":31,"textLines":2,"bbox":[660,402,185,34]}
+{"kind":"shape","id":"sh/gnydgbu9","slide":3,"bbox":[934,270,226,174]}
+{"kind":"textbox","id":"sh/fmpcn6do","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[954,294,40,22]}
+{"kind":"textbox","id":"sh/elgvelw3","slide":3,"text":"Action layer","textPreview":"Action layer","textChars":12,"textLines":1,"bbox":[954,334,185,49]}
+{"kind":"textbox","id":"sh/psrut0vq","slide":3,"text":"Recommendations\n& alerts","textPreview":"Recommendations | & alerts","textChars":24,"textLines":2,"bbox":[954,402,185,34]}
+{"kind":"textbox","id":"sh/orydkvu5","slide":3,"text":"Implemented API chain","textPreview":"Implemented API chain","textChars":21,"textLines":1,"bbox":[52,519,210,23]}
+{"kind":"textbox","id":"sh/3qpcrqdk","slide":3,"text":"/population  →  /habitat  →  /conservation  →  alert feed","textPreview":"/population  →  /habitat  →  /conservation  →  alert feed","textChars":57,"textLines":1,"bbox":[52,552,910,36]}
+{"kind":"notes","id":"nt/rile3s","slide":3,"text":"[Sources]\nDerived from implemented FastAPI routers: population.py, habitat.py, conservation.py; data source services and alert_service.py in user workspace."}
+{"kind":"slide","id":"sl/bqdcdo","slide":4,"title":"PHASE 3 · WEEKS 5–6","textShapes":19}
+{"kind":"textbox","id":"sh/p8betc7y","slide":4,"text":"PHASE 3 · WEEKS 5–6","textPreview":"PHASE 3 · WEEKS 5–6","textChars":19,"textLines":1,"bbox":[48,29,500,20]}
+{"kind":"textbox","id":"sh/25kvyxo7","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1175,29,55,20]}
+{"kind":"shape","id":"sh/n6twr2ps","slide":4,"bbox":[48,57,1184,0]}
+{"kind":"textbox","id":"sh/0j2dw761","slide":4,"text":"Population Intelligence Engine makes numbers usable","textPreview":"Population Intelligence Engine makes numbers usable","textChars":51,"textLines":1,"bbox":[48,78,1120,56]}
+{"kind":"textbox","id":"sh/1kbeps7m","slide":4,"text":"Per-species estimates combine stored detections with reserve-level baselines and expose trends for the dashboard.","textPreview":"Per-species estimates combine stored detections with reserve-level baselines and expose trends for the dashboard.","textChars":113,"textLines":1,"bbox":[48,142,1050,42]}
+{"kind":"shape","id":"sh/eh0vuxob","slide":4,"bbox":[48,210,245,104]}
+{"kind":"textbox","id":"sh/fi9wn2pw","slide":4,"text":"2,733","textPreview":"2,733","textChars":5,"textLines":1,"bbox":[66,228,210,40]}
+{"kind":"textbox","id":"sh/kfmx8r6l","slide":4,"text":"ESTIMATED INDIVIDUALS","textPreview":"ESTIMATED INDIVIDUALS","textChars":21,"textLines":1,"bbox":[66,276,210,22]}
+{"kind":"shape","id":"sh/lgve1wn6","slide":4,"bbox":[318,210,245,104]}
+{"kind":"textbox","id":"sh/18z25g3m","slide":4,"text":"1,500 km²","textPreview":"1,500 km²","textChars":9,"textLines":1,"bbox":[336,228,210,40]}
+{"kind":"textbox","id":"sh/076lwbm1","slide":4,"text":"MONITORING AREA","textPreview":"MONITORING AREA","textChars":15,"textLines":1,"bbox":[336,276,210,22]}
+{"kind":"shape","id":"sh/z6xk36lg","slide":4,"bbox":[588,210,245,104]}
+{"kind":"textbox","id":"sh/e5o3ul4v","slide":4,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[606,228,210,40]}
+{"kind":"textbox","id":"sh/d4f21g3a","slide":4,"text":"SPECIES TRACKED","textPreview":"SPECIES TRACKED","textChars":15,"textLines":1,"bbox":[606,276,210,22]}
+{"kind":"shape","id":"sh/c36lsbm5","slide":4,"bbox":[858,210,245,104]}
+{"kind":"textbox","id":"sh/r2xkz6lk","slide":4,"text":"89%","textPreview":"89%","textChars":3,"textLines":1,"bbox":[876,228,210,40]}
+{"kind":"textbox","id":"sh/q1o3q14z","slide":4,"text":"CONFIDENCE VIEW","textPreview":"CONFIDENCE VIEW","textChars":15,"textLines":1,"bbox":[876,276,210,22]}
+{"kind":"textbox","id":"sh/x0jmd03u","slide":4,"text":"What is now implemented","textPreview":"What is now implemented","textChars":23,"textLines":1,"bbox":[48,364,340,28]}
+{"kind":"shape","id":"sh/wzql4v29","slide":4,"bbox":[50,413,13,13]}
+{"kind":"textbox","id":"sh/g3y50jal","slide":4,"text":"Population size and species distribution from detection records","textPreview":"Population size and species distribution from detection records","textChars":63,"textLines":1,"bbox":[82,404,850,30]}
+{"kind":"shape","id":"sh/h4r694bq","slide":4,"bbox":[50,461,13,13]}
+{"kind":"textbox","id":"sh/uhgny9sf","slide":4,"text":"Density calculation across the monitored reserve area","textPreview":"Density calculation across the monitored reserve area","textChars":53,"textLines":1,"bbox":[82,452,850,30]}
+{"kind":"shape","id":"sh/v2po7et0","slide":4,"bbox":[50,509,13,13]}
+{"kind":"textbox","id":"sh/8fy5wza9","slide":4,"text":"Annual growth-rate and trend-status fields for each species","textPreview":"Annual growth-rate and trend-status fields for each species","textChars":59,"textLines":1,"bbox":[82,500,850,30]}
+{"kind":"shape","id":"sh/tg7m54bu","slide":4,"bbox":[50,557,13,13]}
+{"kind":"textbox","id":"sh/6dgnups3","slide":4,"text":"Dashboard-ready endpoints for estimates, distribution, and migration","textPreview":"Dashboard-ready endpoints for estimates, distribution, and migration","textChars":68,"textLines":1,"bbox":[82,548,850,30]}
+{"kind":"shape","id":"sh/7ep43uto","slide":4,"bbox":[988,366,196,188]}
+{"kind":"textbox","id":"sh/kbe5szad","slide":4,"text":"RESULT","textPreview":"RESULT","textChars":6,"textLines":1,"bbox":[1010,392,150,20]}
+{"kind":"textbox","id":"sh/lc7m1kbi","slide":4,"text":"Species-level insight—\nnot just raw\ndetections.","textPreview":"Species-level insight— | not just raw | detections.","textChars":47,"textLines":3,"bbox":[1010,432,155,87]}
+{"kind":"notes","id":"nt/bqdcdo","slide":4,"text":"[Sources]\nValues are the seeded/dashboard defaults in population_service.py and PopulationIntelligence.jsx; capabilities are derived from implemented service code."}
+{"kind":"slide","id":"sl/hz1t7q","slide":5,"title":"PHASE 3 · WEEKS 5–6","textShapes":20}
+{"kind":"textbox","id":"sh/jupwfmts","slide":5,"text":"PHASE 3 · WEEKS 5–6","textPreview":"PHASE 3 · WEEKS 5–6","textChars":19,"textLines":1,"bbox":[48,29,500,20]}
+{"kind":"textbox","id":"sh/4vydorax","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1175,29,55,20]}
+{"kind":"shape","id":"sh/5w7ehwbi","slide":5,"bbox":[48,57,1184,0]}
+{"kind":"textbox","id":"sh/6hgvq1s3","slide":5,"text":"Migration corridors make movement operational","textPreview":"Migration corridors make movement operational","textChars":45,"textLines":1,"bbox":[48,78,1120,56]}
+{"kind":"textbox","id":"sh/ripwj6to","slide":5,"text":"Three route records surface seasonality, tracked individuals, and risks that teams need to manage.","textPreview":"Three route records surface seasonality, tracked individuals, and risks that teams need to manage.","textChars":98,"textLines":1,"bbox":[48,142,1050,42]}
+{"kind":"shape","id":"sh/sjyxsra9","slide":5,"bbox":[48,213,714,354]}
+{"kind":"textbox","id":"sh/tkrelwbu","slide":5,"text":"ACTIVE CORRIDORS","textPreview":"ACTIVE CORRIDORS","textChars":16,"textLines":1,"bbox":[76,239,180,22]}
+{"kind":"shape","id":"sh/m1wvexcz","slide":5,"bbox":[78,354,644,0]}
+{"kind":"shape","id":"sh/7m5w72tk","slide":5,"bbox":[78,309,22,22]}
+{"kind":"textbox","id":"sh/vmh8fi9c","slide":5,"text":"Sunderbans Northern Corridor","textPreview":"Sunderbans Northern Corridor","textChars":28,"textLines":1,"bbox":[120,294,330,25]}
+{"kind":"textbox","id":"sh/ul8r6dsr","slide":5,"text":"Bengal Tiger","textPreview":"Bengal Tiger","textChars":12,"textLines":1,"bbox":[120,326,330,19]}
+{"kind":"textbox","id":"sh/hozahsr2","slide":5,"text":"18 tracked","textPreview":"18 tracked","textChars":10,"textLines":1,"bbox":[500,299,110,20]}
+{"kind":"textbox","id":"sh/wnq98nax","slide":5,"text":"Low risk","textPreview":"Low risk","textChars":8,"textLines":1,"bbox":[500,328,160,20]}
+{"kind":"shape","id":"sh/7ih8bi90","slide":5,"bbox":[78,437,644,0]}
+{"kind":"shape","id":"sh/mhor2dsf","slide":5,"bbox":[78,392,22,22]}
+{"kind":"textbox","id":"sh/9kzqd8r6","slide":5,"text":"Western Ghats High Pass","textPreview":"Western Ghats High Pass","textChars":23,"textLines":1,"bbox":[120,377,330,25]}
+{"kind":"textbox","id":"sh/8jq943al","slide":5,"text":"Indian Elephant","textPreview":"Indian Elephant","textChars":15,"textLines":1,"bbox":[120,409,330,19]}
+{"kind":"textbox","id":"sh/zux87y94","slide":5,"text":"64 tracked","textPreview":"64 tracked","textChars":10,"textLines":1,"bbox":[500,382,110,20]}
+{"kind":"textbox","id":"sh/ytorytsj","slide":5,"text":"Moderate risk","textPreview":"Moderate risk","textChars":13,"textLines":1,"bbox":[500,411,160,20]}
+{"kind":"shape","id":"sh/2p4rqtcb","slide":5,"bbox":[78,520,644,0]}
+{"kind":"shape","id":"sh/nqdsjydw","slide":5,"bbox":[78,475,22,22]}
+{"kind":"textbox","id":"sh/or69s3uh","slide":5,"text":"Kaziranga River Bank Pass","textPreview":"Kaziranga River Bank Pass","textChars":25,"textLines":1,"bbox":[120,460,330,25]}
+{"kind":"textbox","id":"sh/psfal8v2","slide":5,"text":"Indian Rhinoceros","textPreview":"Indian Rhinoceros","textChars":17,"textLines":1,"bbox":[120,492,330,19]}
+{"kind":"textbox","id":"sh/atorudcn","slide":5,"text":"31 tracked","textPreview":"31 tracked","textChars":10,"textLines":1,"bbox":[500,465,110,20]}
+{"kind":"textbox","id":"sh/bexsnyd8","slide":5,"text":"Elevated risk","textPreview":"Elevated risk","textChars":13,"textLines":1,"bbox":[500,494,160,20]}
+{"kind":"shape","id":"sh/cf6tg3ud","slide":5,"bbox":[806,213,380,354]}
+{"kind":"textbox","id":"sh/xgfap8vy","slide":5,"text":"WHY THIS\nMATTERS","textPreview":"WHY THIS | MATTERS","textChars":16,"textLines":2,"bbox":[838,246,250,60]}
+{"kind":"textbox","id":"sh/yhobidcj","slide":5,"text":"Movement patterns guide patrol planning, conflict prevention, and seasonal protection.","textPreview":"Movement patterns guide patrol planning, conflict prevention, and seasonal protection.","textChars":86,"textLines":1,"bbox":[838,344,300,130]}
+{"kind":"textbox","id":"sh/zixsrit4","slide":5,"text":"Population endpoint: /population/migration","textPreview":"Population endpoint: /population/migration","textChars":42,"textLines":1,"bbox":[838,516,300,22]}
+{"kind":"notes","id":"nt/hz1t7q","slide":5,"text":"[Sources]\nCorridor names, species, seasons, risks, and tracked counts from PopulationService.get_migration_analytics() in the user workspace."}
+{"kind":"slide","id":"sl/qc4xap","slide":6,"title":"PHASE 3 · WEEKS 5–6","textShapes":19}
+{"kind":"textbox","id":"sh/d83q98vm","slide":6,"text":"PHASE 3 · WEEKS 5–6","textPreview":"PHASE 3 · WEEKS 5–6","textChars":19,"textLines":1,"bbox":[48,29,500,20]}
+{"kind":"textbox","id":"sh/q5s7ytwv","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1175,29,55,20]}
+{"kind":"shape","id":"sh/r6l87ydg","slide":6,"bbox":[48,57,1184,0]}
+{"kind":"textbox","id":"sh/0vu943ex","slide":6,"text":"Habitat telemetry rolls up into one ecosystem health score","textPreview":"Habitat telemetry rolls up into one ecosystem health score","textChars":58,"textLines":1,"bbox":[48,78,1120,56]}
+{"kind":"textbox","id":"sh/1w3qd8vi","slide":6,"text":"The scoring model makes habitat condition, biodiversity, and population stability comparable in a single measure.","textPreview":"The scoring model makes habitat condition, biodiversity, and population stability comparable in a single measure.","textChars":113,"textLines":1,"bbox":[48,142,1050,42]}
+{"kind":"shape","id":"sh/e9c72dwr","slide":6,"bbox":[48,213,422,334]}
+{"kind":"textbox","id":"sh/zul8bydc","slide":6,"text":"ECOSYSTEM HEALTH SCORE","textPreview":"ECOSYSTEM HEALTH SCORE","textChars":22,"textLines":1,"bbox":[76,246,280,22]}
+{"kind":"textbox","id":"sh/gzapsjet","slide":6,"text":"78.4","textPreview":"78.4","textChars":4,"textLines":1,"bbox":[76,298,240,85]}
+{"kind":"textbox","id":"sh/h0jq1ofe","slide":6,"text":"/ 100  •  Healthy","textPreview":"/ 100  •  Healthy","textChars":17,"textLines":1,"bbox":[294,341,140,29]}
+{"kind":"shape","id":"sh/1cjax8n2","slide":6,"bbox":[76,406,361,0]}
+{"kind":"textbox","id":"sh/0bat43mx","slide":6,"text":"A weighted view of reserve condition, not a single sensor reading.","textPreview":"A weighted view of reserve condition, not a single sensor reading.","textChars":66,"textLines":1,"bbox":[76,435,330,54]}
+{"kind":"textbox","id":"sh/fa1svy5c","slide":6,"text":"Species diversity","textPreview":"Species diversity","textChars":17,"textLines":1,"bbox":[531,220,270,26]}
+{"kind":"textbox","id":"sh/e98b2d4r","slide":6,"text":"30%","textPreview":"30%","textChars":3,"textLines":1,"bbox":[829,220,65,26]}
+{"kind":"shape","id":"sh/pgju1sne","slide":6,"bbox":[920,222,220,18]}
+{"kind":"shape","id":"sh/ofat8nmt","slide":6,"bbox":[920,222,220,18]}
+{"kind":"textbox","id":"sh/ne1szi58","slide":6,"text":"Population stability","textPreview":"Population stability","textChars":20,"textLines":1,"bbox":[531,281,270,26]}
+{"kind":"textbox","id":"sh/2dsb6d4n","slide":6,"text":"25%","textPreview":"25%","textChars":3,"textLines":1,"bbox":[829,281,65,26]}
+{"kind":"shape","id":"sh/x43u5sna","slide":6,"bbox":[920,283,220,18]}
+{"kind":"shape","id":"sh/c3utwnmp","slide":6,"bbox":[920,283,183.33,18]}
+{"kind":"textbox","id":"sh/wn2d8bu1","slide":6,"text":"Habitat quality","textPreview":"Habitat quality","textChars":15,"textLines":1,"bbox":[531,342,270,26]}
+{"kind":"textbox","id":"sh/xobe1wbm","slide":6,"text":"20%","textPreview":"20%","textChars":3,"textLines":1,"bbox":[829,342,65,26]}
+{"kind":"shape","id":"sh/alkv61cv","slide":6,"bbox":[920,344,220,18]}
+{"kind":"shape","id":"sh/vmtwz6tg","slide":6,"bbox":[920,344,146.67,18]}
+{"kind":"textbox","id":"sh/kb2dcbud","slide":6,"text":"Endangered status","textPreview":"Endangered status","textChars":17,"textLines":1,"bbox":[531,403,270,26]}
+{"kind":"textbox","id":"sh/5cbe5gbi","slide":6,"text":"15%","textPreview":"15%","textChars":3,"textLines":1,"bbox":[829,403,65,26]}
+{"kind":"shape","id":"sh/ipkva1c7","slide":6,"bbox":[920,405,220,18]}
+{"kind":"shape","id":"sh/jatw36ts","slide":6,"bbox":[920,405,110,18]}
+{"kind":"textbox","id":"sh/0fid0rut","slide":6,"text":"Environmental conditions","textPreview":"Environmental conditions","textChars":24,"textLines":1,"bbox":[531,464,270,26]}
+{"kind":"textbox","id":"sh/lgrutcbe","slide":6,"text":"10%","textPreview":"10%","textChars":3,"textLines":1,"bbox":[829,464,65,26]}
+{"kind":"shape","id":"sh/nmh8veh8","slide":6,"bbox":[920,466,220,18]}
+{"kind":"shape","id":"sh/2l87m90n","slide":6,"bbox":[920,466,73.33,18]}
+{"kind":"textbox","id":"sh/pozqxoze","slide":6,"text":"Formula implemented in ConservationService","textPreview":"Formula implemented in ConservationService","textChars":42,"textLines":1,"bbox":[531,540,560,22]}
+{"kind":"notes","id":"nt/qc4xap","slide":6,"text":"[Sources]\nWeights are from the user-provided project specification and calculate_health_scores() in conservation_service.py. Score shown is the default dashboard fallback in HabitatMonitoring.jsx."}
+{"kind":"slide","id":"sl/8xbujh","slide":7,"title":"PHASE 3 · WEEKS 5–6","textShapes":19}
+{"kind":"textbox","id":"sh/by1c361k","slide":7,"text":"PHASE 3 · WEEKS 5–6","textPreview":"PHASE 3 · WEEKS 5–6","textChars":19,"textLines":1,"bbox":[48,29,500,20]}
+{"kind":"textbox","id":"sh/wzadcbi5","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1175,29,55,20]}
+{"kind":"shape","id":"sh/x0ju5gjq","slide":7,"bbox":[48,57,1184,0]}
+{"kind":"textbox","id":"sh/m98v6103","slide":7,"text":"Recommendations and alerts close the loop","textPreview":"Recommendations and alerts close the loop","textChars":41,"textLines":1,"bbox":[48,78,1120,56]}
+{"kind":"textbox","id":"sh/nahcz61o","slide":7,"text":"The system converts ecological signals into prioritized, place-specific next actions.","textPreview":"The system converts ecological signals into prioritized, place-specific next actions.","textChars":85,"textLines":1,"bbox":[48,142,1050,42]}
+{"kind":"shape","id":"sh/obqd8rit","slide":7,"bbox":[48,211,735,90]}
+{"kind":"textbox","id":"sh/9wzu1wje","slide":7,"text":"CRITICAL","textPreview":"CRITICAL","textChars":8,"textLines":1,"bbox":[70,228,93,18]}
+{"kind":"textbox","id":"sh/65cvil07","slide":7,"text":"Western Ghats Corridor Protection Patrols","textPreview":"Western Ghats Corridor Protection Patrols","textChars":41,"textLines":1,"bbox":[185,224,535,25]}
+{"kind":"textbox","id":"sh/76lcbq1s","slide":7,"text":"Deploy drone patrols and acoustic alert tripwires near agricultural boundaries.","textPreview":"Deploy drone patrols and acoustic alert tripwires near agricultural boundaries.","textChars":79,"textLines":1,"bbox":[185,257,535,30]}
+{"kind":"shape","id":"sh/7y5or2hw","slide":7,"bbox":[48,323,735,90]}
+{"kind":"textbox","id":"sh/mxwnyx0b","slide":7,"text":"HIGH","textPreview":"HIGH","textChars":4,"textLines":1,"bbox":[70,340,93,18]}
+{"kind":"textbox","id":"sh/90n6tcz2","slide":7,"text":"Sunderbans Mangrove Water Salinity Mitigation","textPreview":"Sunderbans Mangrove Water Salinity Mitigation","textChars":45,"textLines":1,"bbox":[185,336,535,25]}
+{"kind":"textbox","id":"sh/8ze507ih","slide":7,"text":"Improve freshwater availability with retention ponds and sensor monitoring.","textPreview":"Improve freshwater availability with retention ponds and sensor monitoring.","textChars":75,"textLines":1,"bbox":[185,369,535,30]}
+{"kind":"shape","id":"sh/v2pov2hs","slide":7,"bbox":[48,435,735,90]}
+{"kind":"textbox","id":"sh/u1wnmx07","slide":7,"text":"MEDIUM","textPreview":"MEDIUM","textChars":6,"textLines":1,"bbox":[70,452,93,18]}
+{"kind":"textbox","id":"sh/h476xczy","slide":7,"text":"Camera Trap Network Optimization","textPreview":"Camera Trap Network Optimization","textChars":32,"textLines":1,"bbox":[185,448,535,25]}
+{"kind":"textbox","id":"sh/g3y5o7id","slide":7,"text":"Reposition 12 nodes to improve nocturnal predator detection.","textPreview":"Reposition 12 nodes to improve nocturnal predator detection.","textChars":60,"textLines":1,"bbox":[185,481,535,30]}
+{"kind":"shape","id":"sh/36pozmh4","slide":7,"bbox":[835,211,353,314]}
+{"kind":"textbox","id":"sh/i5gnqh0j","slide":7,"text":"ALERT TYPES","textPreview":"ALERT TYPES","textChars":11,"textLines":1,"bbox":[865,237,170,22]}
+{"kind":"shape","id":"sh/exkze5o3","slide":7,"bbox":[867,290,13,13]}
+{"kind":"textbox","id":"sh/zyd07a5o","slide":7,"text":"Endangered species sighting","textPreview":"Endangered species sighting","textChars":27,"textLines":1,"bbox":[902,282,230,28]}
+{"kind":"shape","id":"sh/0zmhgf6t","slide":7,"bbox":[867,337,13,13]}
+{"kind":"textbox","id":"sh/10vi9kne","slide":7,"text":"Population decline warning","textPreview":"Population decline warning","textChars":26,"textLines":1,"bbox":[902,329,230,28]}
+{"kind":"shape","id":"sh/q9kza5or","slide":7,"bbox":[867,384,13,13]}
+{"kind":"textbox","id":"sh/rat03a5c","slide":7,"text":"Habitat degradation","textPreview":"Habitat degradation","textChars":19,"textLines":1,"bbox":[902,376,230,28]}
+{"kind":"shape","id":"sh/cb2hcf6x","slide":7,"bbox":[867,431,13,13]}
+{"kind":"textbox","id":"sh/dcbi5kni","slide":7,"text":"Device status","textPreview":"Device status","textChars":13,"textLines":1,"bbox":[902,423,230,28]}
+{"kind":"textbox","id":"sh/a54zmpob","slide":7,"text":"Prioritize • notify • intervene","textPreview":"Prioritize • notify • intervene","textChars":31,"textLines":1,"bbox":[48,576,530,28]}
+{"kind":"notes","id":"nt/8xbujh","slide":7,"text":"[Sources]\nRecommendation titles and actions from ConservationService.get_recommendations(); alert types from AlertService.get_active_alerts() in the user workspace."}
+{"kind":"slide","id":"sl/xl4qut","slide":8,"title":"PHASE 3 COMPLETE","textShapes":7}
+{"kind":"textbox","id":"sh/kjulcj2x","slide":8,"text":"PHASE 3 COMPLETE","textPreview":"PHASE 3 COMPLETE","textChars":16,"textLines":1,"bbox":[52,48,400,24]}
+{"kind":"textbox","id":"sh/ji1k3elc","slide":8,"text":"From wildlife observations\nto conservation decisions.","textPreview":"From wildlife observations | to conservation decisions.","textChars":53,"textLines":2,"bbox":[52,120,920,145]}
+{"kind":"textbox","id":"sh/yhs3a9kr","slide":8,"text":"The new implementation provides population estimates, habitat intelligence, ecosystem health scoring, migration analytics, recommendations, and alerts in one connected workflow.","textPreview":"The new implementation provides population estimates, habitat intelligence, ecosystem health scoring, migration analytics, recommendation...","textChars":177,"textLines":1,"bbox":[55,310,765,88]}
+{"kind":"shape","id":"sh/xgj2143m","slide":8,"bbox":[926,142,274,274]}
+{"kind":"textbox","id":"sh/wfal8z21","slide":8,"text":"READY FOR\nPHASE 4","textPreview":"READY FOR | PHASE 4","textChars":17,"textLines":2,"bbox":[958,180,200,48]}
+{"kind":"textbox","id":"sh/bu1kzulg","slide":8,"text":"Executive analytics, reports, GIS visualization, testing, and deployment.","textPreview":"Executive analytics, reports, GIS visualization, testing, and deployment.","textChars":73,"textLines":1,"bbox":[958,282,198,105]}
+{"kind":"shape","id":"sh/ats369kv","slide":8,"bbox":[55,577,1145,0]}
+{"kind":"textbox","id":"sh/hcnmd83q","slide":8,"text":"Wildlife Population Intelligence System","textPreview":"Wildlife Population Intelligence System","textChars":39,"textLines":1,"bbox":[55,608,450,24]}
+{"kind":"textbox","id":"sh/gbelk325","slide":8,"text":"Phase 3 presentation","textPreview":"Phase 3 presentation","textChars":20,"textLines":1,"bbox":[1004,608,195,24]}
+{"kind":"notes","id":"nt/xl4qut","slide":8,"text":"[Sources]\nPhase 4 transition scope from the user-provided project specification."}

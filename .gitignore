@@ -1,0 +1,40 @@
+# ---------- Python / Backend ----------
+__pycache__/
+*.py[cod]
+*.db
+backend/.env
+backend/venv/
+backend/.venv/
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Virtual environments at any project level
+venv/
+.venv/
+env/
+
+# ---------- Generated AI artifacts / datasets ----------
+model/*.pt
+backend/*.pt
+runs_wildlife/
+dataset/raw/
+dataset/processed/
+
+# ---------- Build tools ----------
+**/node_modules/
+.vite/
+.tmp-*/
+
+# ---------- Node / Frontend ----------
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# ---------- ML / Model ----------
+model/runs/
+
+# ---------- OS / IDE ----------
+.DS_Store
+.vscode/
+.idea/
+*.log

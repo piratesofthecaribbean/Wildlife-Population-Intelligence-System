@@ -1,0 +1,61 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        forest: {
+          50: "#f3f7f4",
+          100: "#e5efe8",
+          200: "#d6e4dc",
+          300: "#b5cebe",
+          400: "#86b398",
+          500: "#3d855e",
+          600: "#227048",
+          700: "#155e3b",
+          800: "#10482e",
+          850: "#0e3b26",
+          900: "#0d261b",
+          950: "#06150e",
+          DEFAULT: "#155e3b",
+        },
+        sage: {
+          50: "#f6f8f6",
+          100: "#edf2ee",
+          200: "#dbe5dc",
+          300: "#c2d4c4",
+          400: "#9fbda3",
+          500: "#6e9474",
+          600: "#4f7255",
+          700: "#3c5841",
+          800: "#2e4432",
+          900: "#1e2e21",
+        },
+        accent: {
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#f59e0b",
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
+          DEFAULT: "#b45309",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        display: ['"Plus Jakarta Sans"', "Inter", "sans-serif"],
+        mono: ['"JetBrains Mono"', "monospace"],
+      },
+      boxShadow: {
+        card: "0 1px 3px 0 rgba(13, 38, 27, 0.05), 0 1px 2px -1px rgba(13, 38, 27, 0.02)",
+        panel: "0 4px 12px -2px rgba(13, 38, 27, 0.06), 0 2px 4px -2px rgba(13, 38, 27, 0.03)",
+        lift: "0 8px 20px -4px rgba(13, 38, 27, 0.08)",
+      },
+    },
+  },
+  plugins: [],
+};

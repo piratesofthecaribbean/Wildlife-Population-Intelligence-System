@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   WILDLIFE POPULATION INTELLIGENCE SYSTEM (WPIS)
+   Theme: Simple, Clean Light-Green Theme with Maximum Readability
+   ========================================================================== */
+
+:root {
+  /* Page & Panel Backgrounds */
+  --bg-page: #f3f7f4;         /* Soft sage-mint tint for page background */
+  --bg-panel: #ffffff;        /* Crisp solid white for cards & widgets */
+  --bg-panel-alt: #ebf3ee;    /* Slightly deeper tint for sub-sections */
+  --border-color: #d6e4dc;    /* High-clarity subtle sage border */
+  --border-subtle: #e5efe8;
+
+  /* Typography Colors (High Contrast WCAG AA / AAA) */
+  --text-primary: #0d261b;    /* Near-black dark forest - 16.2:1 on white */
+  --text-secondary: #355344;  /* Deep forest charcoal - 7.1:1 on white */
+  --text-muted: #4e6b5c;      /* Readable muted text - 4.9:1 on white */
+
+  /* Primary Action & Brand Green */
+  --brand-primary: #155e3b;   /* Solid medium forest - 6.2:1 with white */
+  --brand-primary-hover: #0f492d;
+  --brand-light: #e8f5ee;
+
+  /* Alert / Critical Accent (Amber & Red reserved strictly for warnings) */
+  --accent-amber: #b45309;    /* 5.1:1 contrast */
+  --accent-amber-bg: #fef3c7;
+  --accent-red: #b91c1c;      /* 5.9:1 contrast */
+  --accent-red-bg: #fee2e2;
+
+  /* Conservation Status Palette */
+  --status-excellent-text: #14532d;
+  --status-excellent-bg: #dcfce7;
+  --status-healthy-text: #166534;
+  --status-healthy-bg: #f0fdf4;
+  --status-moderate-text: #854d0e;
+  --status-moderate-bg: #fef9c3;
+  --status-vulnerable-text: #9a3412;
+  --status-vulnerable-bg: #ffedd5;
+  --status-critical-text: #991b1b;
+  --status-critical-bg: #fee2e2;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   SOLID & CLEAN COMPONENT SURFACES (NO GLASS/BLUR CONTRAST ISSUES)
+   ========================================================================== */
+
+@layer components {
+  /* Primary White Card Surface */
+  .glass-card,
+  .glass-prominent,
+  .glass-subtle,
+  .glass-interactive,
+  .solid-surface {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px 0 rgba(13, 38, 27, 0.04), 0 1px 2px -1px rgba(13, 38, 27, 0.02);
+    border-radius: 1rem;
+  }
+
+  .glass-prominent {
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 12px -2px rgba(13, 38, 27, 0.06), 0 2px 4px -2px rgba(13, 38, 27, 0.03);
+  }
+
+  .glass-interactive {
+    cursor: pointer;
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  }
+  .glass-interactive:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(13, 38, 27, 0.08);
+    border-color: #a7cbba;
+  }
+
+  /* Solid Buttons with Verified High Contrast */
+  .btn-forest-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #ffffff;
+    background-color: #155e3b;
+    border: 1px solid #10482e;
+    box-shadow: 0 1px 3px rgba(13, 38, 27, 0.12);
+    transition: background-color 150ms ease, transform 150ms ease;
+  }
+  .btn-forest-primary:hover {
+    background-color: #0f492d;
+    transform: translateY(-1px);
+  }
+  .btn-forest-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-accent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #ffffff;
+    background-color: #b45309;
+    border: 1px solid #92400e;
+    box-shadow: 0 1px 3px rgba(180, 83, 9, 0.15);
+    transition: background-color 150ms ease, transform 150ms ease;
+  }
+  .btn-accent:hover {
+    background-color: #92400e;
+    transform: translateY(-1px);
+  }
+  .btn-accent:active {
+    transform: scale(0.98);
+  }
+
+  .btn-forest-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #155e3b;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: background-color 150ms ease, border-color 150ms ease, transform 150ms ease;
+  }
+  .btn-forest-secondary:hover {
+    background-color: #f3f8f5;
+    border-color: #a7cbba;
+    transform: translateY(-1px);
+  }
+  .btn-forest-secondary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.875rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #155e3b;
+    transition: background-color 150ms ease;
+  }
+  .btn-ghost:hover {
+    background-color: #e8f4ed;
+  }
+
+  /* Form Inputs (Solid white with dark text and crisp focus) */
+  .input-forest,
+  .input-field {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #0d261b;
+    border: 1px solid var(--border-color);
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+  }
+  .input-forest:focus,
+  .input-field:focus {
+    outline: none;
+    border-color: #155e3b;
+    box-shadow: 0 0 0 3px rgba(21, 94, 59, 0.15);
+  }
+  .input-forest::placeholder,
+  .input-field::placeholder {
+    color: #4e6b5c;
+  }
+
+  /* Status and Priority Badges */
+  .badge-forest {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #e8f4ed;
+    color: #10482e;
+    border: 1px solid #c2e2d0;
+  }
+
+  .badge-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b0cebe;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8bb69f;
+}
