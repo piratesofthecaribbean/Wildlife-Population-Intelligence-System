@@ -9,8 +9,6 @@ import {
   ResponsiveContainer,
   AreaChart,
   Area,
-  LineChart,
-  Line,
   BarChart,
   Bar,
   XAxis,
@@ -19,6 +17,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import {
@@ -174,11 +173,10 @@ export default function Dashboard() {
             <button
               key={r}
               onClick={() => handleRoleSelect(r)}
-              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${
-                selectedRole === r
+              className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${selectedRole === r
                   ? "bg-[#155e3b] text-white shadow-sm"
                   : "text-[#355344] hover:text-[#0d261b] hover:bg-[#e5efe8]"
-              }`}
+                }`}
             >
               {r.replace(" Officer", "").replace(" Department", "")}
             </button>

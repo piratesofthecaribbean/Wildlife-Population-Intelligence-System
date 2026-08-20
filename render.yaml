@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: wpis-backend
+    runtime: python
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: DATABASE_URL
+        value: sqlite:///./wildlife.db
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "60"
+      - key: CORS_ORIGINS
+        value: "https://wildlife-population-intelligence-sy.vercel.app,https://wildlife-population-intelligence-system-byp4.vercel.app"
+      - key: YOLO_MODEL_PATH
+        value: "yolo11n.pt"
+      - key: DEVICE
+        value: "cpu"
+      - key: UPLOAD_DIR
+        value: "uploads"
+      - key: AUDIO_UPLOAD_DIR
+        value: "uploads/audio"

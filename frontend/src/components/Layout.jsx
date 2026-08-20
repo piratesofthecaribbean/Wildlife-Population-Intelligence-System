@@ -11,8 +11,8 @@ import {
   FaSeedling,
   FaCog,
   FaSignOutAlt,
-  FaPaw,
   FaBars,
+
   FaTimes,
   FaMicrophone,
   FaLeaf,

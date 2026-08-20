@@ -97,7 +97,7 @@ export default function BiodiversityAnalytics() {
             <FaLeaf className="text-[#155e3b]" /> Biodiversity Metrics & Mathematical Entropy
           </h2>
           <p className="text-xs text-[#355344] mt-1">
-            Shannon-Wiener diversity entropy (H'), Simpson dominance index (D), species richness, and evenness.
+            Shannon-Wiener diversity entropy (H&apos;), Simpson dominance index (D), species richness, and evenness.
           </p>
         </div>
 
@@ -124,14 +124,14 @@ export default function BiodiversityAnalytics() {
         <GlassCard variant="standard" className="p-6 space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-mono font-bold uppercase text-[#355344]">
-              Shannon-Wiener (H')
+              Shannon-Wiener (H&apos;)
             </span>
             <FaCalculator className="text-[#155e3b]" />
           </div>
           <div className="font-display font-extrabold text-3xl text-[#0d261b]">
             <CountUp end={metrics?.shannon_index || 2.45} decimals={2} />
           </div>
-          <p className="text-xs text-[#355344]">H' = -Σ(pi * ln(pi))</p>
+          <p className="text-xs text-[#355344]">{'H\' = -\u03a3(pi * ln(pi))'}</p>
           <div className="pt-2">
             <StatusBadge status="Healthy" size="sm" />
           </div>

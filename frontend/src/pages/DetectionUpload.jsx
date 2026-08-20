@@ -239,7 +239,46 @@ export default function DetectionUpload() {
                 </div>
               </div>
 
-              {/* Survey */}
+              {/* Habitat Type */}
+              <div className="space-y-1">
+                <label className="text-[10px] font-bold uppercase tracking-wider text-[#0d261b] font-mono">
+                  Habitat Type
+                </label>
+                <select
+                  value={habitatType}
+                  onChange={(e) => setHabitatType(e.target.value)}
+                  className="input-forest text-xs py-2 cursor-pointer"
+                >
+                  <option>Tropical Forest</option>
+                  <option>Mangrove</option>
+                  <option>Grassland</option>
+                  <option>Wetland</option>
+                  <option>Desert</option>
+                  <option>Alpine</option>
+                </select>
+              </div>
+
+              {/* Protected Area */}
+              <div className="space-y-1">
+                <label className="text-[10px] font-bold uppercase tracking-wider text-[#0d261b] font-mono">
+                  Protected Area
+                </label>
+                <select
+                  value={protectedArea}
+                  onChange={(e) => setProtectedArea(e.target.value)}
+                  className="input-forest text-xs py-2 cursor-pointer"
+                >
+                  <option>Sunderbans Tiger Reserve</option>
+                  <option>Jim Corbett National Park</option>
+                  <option>Kaziranga National Park</option>
+                  <option>Bandipur National Park</option>
+                  <option>Ranthambore National Park</option>
+                  <option>Gir Forest National Park</option>
+                  <option>Other / Unprotected</option>
+                </select>
+              </div>
+
+
               <div className="space-y-1">
                 <label className="text-[10px] font-bold uppercase tracking-wider text-[#0d261b] font-mono">
                   Link to Survey Node

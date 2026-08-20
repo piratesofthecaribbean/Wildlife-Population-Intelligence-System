@@ -9,9 +9,8 @@ import {
   FaMapMarkerAlt,
   FaCalendarAlt,
   FaTimes,
-  FaCamera,
-  FaMicrophone,
 } from "react-icons/fa";
+
 
 export default function Surveys() {
   const [surveys, setSurveys] = useState([]);
@@ -114,21 +113,19 @@ export default function Surveys() {
       <div className="flex space-x-2 border-b border-[#d6e4dc] pb-2">
         <button
           onClick={() => setActiveTab("surveys")}
-          className={`px-4 py-2 text-xs font-bold font-mono rounded-xl transition-all ${
-            activeTab === "surveys"
+          className={`px-4 py-2 text-xs font-bold font-mono rounded-xl transition-all ${activeTab === "surveys"
               ? "bg-[#155e3b] text-white shadow-sm"
               : "bg-[#f3f7f4] text-[#355344] hover:text-[#0d261b] hover:bg-[#e5efe8]"
-          }`}
+            }`}
         >
           Active Survey Campaigns ({surveys.length})
         </button>
         <button
           onClick={() => setActiveTab("devices")}
-          className={`px-4 py-2 text-xs font-bold font-mono rounded-xl transition-all ${
-            activeTab === "devices"
+          className={`px-4 py-2 text-xs font-bold font-mono rounded-xl transition-all ${activeTab === "devices"
               ? "bg-[#155e3b] text-white shadow-sm"
               : "bg-[#f3f7f4] text-[#355344] hover:text-[#0d261b] hover:bg-[#e5efe8]"
-          }`}
+            }`}
         >
           Camera Traps & Sensor Nodes ({devices.length})
         </button>

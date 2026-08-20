@@ -131,11 +131,10 @@ export default function SpeciesDatabase() {
             <button
               key={g}
               onClick={() => setGroupFilter(g)}
-              className={`px-3 py-1.5 text-xs font-bold font-mono rounded-xl transition-all ${
-                groupFilter === g
+              className={`px-3 py-1.5 text-xs font-bold font-mono rounded-xl transition-all ${groupFilter === g
                   ? "bg-[#155e3b] text-white shadow-sm"
                   : "bg-[#f3f7f4] text-[#355344] hover:text-[#0d261b] hover:bg-[#e5efe8]"
-              }`}
+                }`}
             >
               {g}
             </button>
@@ -260,6 +259,32 @@ export default function SpeciesDatabase() {
                     onChange={(e) => setTaxClass(e.target.value)}
                     className="input-forest text-xs"
                   />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-2">
+                <div className="space-y-1">
+                  <label className="font-bold text-[#0d261b] font-mono">Order</label>
+                  <input type="text" placeholder="e.g. Carnivora" value={taxOrder}
+                    onChange={(e) => setTaxOrder(e.target.value)} className="input-forest text-xs" />
+                </div>
+                <div className="space-y-1">
+                  <label className="font-bold text-[#0d261b] font-mono">Family</label>
+                  <input type="text" placeholder="e.g. Felidae" value={family}
+                    onChange={(e) => setFamily(e.target.value)} className="input-forest text-xs" />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-2">
+                <div className="space-y-1">
+                  <label className="font-bold text-[#0d261b] font-mono">Diet</label>
+                  <input type="text" placeholder="e.g. Carnivore" value={diet}
+                    onChange={(e) => setDiet(e.target.value)} className="input-forest text-xs" />
+                </div>
+                <div className="space-y-1">
+                  <label className="font-bold text-[#0d261b] font-mono">Habitat</label>
+                  <input type="text" placeholder="e.g. Tropical Forest" value={habitat}
+                    onChange={(e) => setHabitat(e.target.value)} className="input-forest text-xs" />
                 </div>
               </div>
 
