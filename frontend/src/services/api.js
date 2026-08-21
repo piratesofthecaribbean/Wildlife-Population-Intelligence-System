@@ -6,7 +6,7 @@ const getDefaultApiUrl = () => {
     return import.meta.env.VITE_API_BASE_URL;
   }
   if (typeof window !== "undefined" && window.location.hostname.includes("vercel.app")) {
-    return "https://wpis-backend.onrender.com/api/v1";
+    return "https://wildlife-population-intelligence-system-1.onrender.com/api/v1";
   }
   return "http://localhost:8000/api/v1";
 };

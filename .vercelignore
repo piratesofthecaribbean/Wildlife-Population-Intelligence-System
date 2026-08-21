@@ -1,0 +1,12 @@
+.git
+.venv
+backend
+backend_uploads
+dataset
+model
+runs_wildlife
+Project_Presentation
+*.pt
+*.pptx
+*.db
+uploads
