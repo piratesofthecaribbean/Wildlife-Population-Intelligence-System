@@ -2,8 +2,17 @@
 
 An AI-assisted, full-stack platform that converts wildlife observations into useful conservation intelligence. The system helps researchers and conservation teams record surveys, identify species from images, analyse audio observations, monitor habitat conditions, study population trends, and produce reports from one workspace.
 
+## 🌐 Live Deployments & Repository Links
+
+- **Live Web Application (Frontend):** [https://wildlife-population-intelligence-sy-five.vercel.app](https://wildlife-population-intelligence-sy-five.vercel.app)
+- **Live API Backend (Render):** [https://wildlife-population-intelligence-system-1.onrender.com](https://wildlife-population-intelligence-system-1.onrender.com)
+- **Interactive Swagger API Docs:** [https://wildlife-population-intelligence-system-1.onrender.com/api/docs](https://wildlife-population-intelligence-system-1.onrender.com/api/docs)
+- **Production Repository:** [https://github.com/piratesofthecaribbean/Wildlife-Population-Intelligence-System](https://github.com/piratesofthecaribbean/Wildlife-Population-Intelligence-System)
+- **Group 2 Development Repository (Ayush-Verma Branch):** [https://github.com/springboardmentor27400b/Wildlife-Population-Intelligence-System-Group-2/tree/Ayush-Verma](https://github.com/springboardmentor27400b/Wildlife-Population-Intelligence-System-Group-2/tree/Ayush-Verma)
+
 ## Contents
 
+- [Live Deployments & Repository Links](#-live-deployments--repository-links)
 - [Project overview](#project-overview)
 - [Workflow and architecture](#workflow-and-architecture)
 - [Features](#features)

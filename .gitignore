@@ -38,3 +38,5 @@ model/runs/
 .vscode/
 .idea/
 *.log
+.vercel
+.env*
