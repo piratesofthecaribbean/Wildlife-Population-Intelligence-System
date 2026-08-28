@@ -115,9 +115,9 @@ def get_detection_model():
 
 def get_classification_model() -> Tuple[Any, Any]:
     """
-    Returns (model, transforms) for the Stage 2 EfficientNetV2-B3 classifier
-    pretrained on ImageNet-21k → fine-tuned on ImageNet-1k.
-    Lazy-loaded and cached globally.
+    Returns (model, transforms) for the Stage 2 wildlife classifier.
+    Uses lightweight pretrained MobileNetV3/EfficientNet for ultra-fast,
+    low-memory cloud & local CPU execution.
     """
     global _class_model, _class_transforms
     if _class_model is not None:
@@ -128,25 +128,32 @@ def get_classification_model() -> Tuple[Any, Any]:
         from timm.data import resolve_data_config, transforms_factory
 
         device = get_device()
-        logger.info("[Stage 2] Loading EfficientNetV2-B3 classifier (ImageNet-21k pretrained)...")
+        logger.info("[Stage 2] Loading lightweight wildlife crop classifier...")
 
-        model = timm.create_model(
-            "tf_efficientnetv2_b3.in21k_ft_in1k",
-            pretrained=True,
-            num_classes=1000,
-        )
+        # mobilenetv3_large_100 is ~15MB, ultra-fast on CPU, uses standard ImageNet-1k synsets
+        model = None
+        for model_name in ["mobilenetv3_large_100", "efficientnet_b0", "tf_efficientnetv2_b3.in21k_ft_in1k"]:
+            try:
+                model = timm.create_model(model_name, pretrained=True, num_classes=1000)
+                logger.info("[Stage 2] Successfully loaded vision model: %s", model_name)
+                break
+            except Exception as e:
+                logger.warning("[Stage 2] Failed loading %s: %s", model_name, e)
+
+        if model is None:
+            return None, None
+
         model = model.to(device)
         model.eval()
 
-        # Build the data transforms from the model's own config
-        data_cfg = resolve_data_config(model.pretrained_cfg)
-        transforms = transforms_factory.create_transform(**data_cfg)
+        cfg = resolve_data_config(model.pretrained_cfg)
+        transforms = transforms_factory.create_transform(**cfg)
 
         _class_model = model
         _class_transforms = transforms
-        logger.info("[Stage 2] Classifier loaded successfully.")
+        logger.info("[Stage 2] Stage 2 vision classifier ready on %s.", device)
         return _class_model, _class_transforms
 
     except Exception as exc:
-        logger.warning("[Stage 2] Could not load classifier: %s — skipping Stage 2.", exc)
+        logger.warning("[Stage 2] Classifier initialization note: %s. Using YOLO fallback.", exc)
         return None, None
