@@ -569,8 +569,8 @@ def run_full_inference(
         scale = 1280 / max(h, w)
         image_bgr = cv2.resize(image_bgr, (int(w * scale), int(h * scale)), cv2.INTER_AREA)
 
-    # Mild denoising
-    image_bgr = cv2.fastNlMeansDenoisingColored(image_bgr, None, 6, 6, 7, 21)
+    # Edge-preserving smoothing (ultra-fast, CPU-friendly)
+    image_bgr = cv2.bilateralFilter(image_bgr, 5, 40, 40)
 
     pipeline_stages = ["Stage1-YOLO"]
 

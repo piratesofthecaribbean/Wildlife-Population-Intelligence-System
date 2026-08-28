@@ -1,18 +1,11 @@
 {
-  "services": {
-    "wpis-backend": {
-      "root": "backend",
-      "entrypoint": "app.main:app",
-      "buildCommand": "pip install --upgrade pip && pip install -r requirements.txt"
-    }
-  },
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "framework": "vite",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": {
-        "type": "service",
-        "service": "wpis-backend"
-      }
+      "destination": "/index.html"
     }
   ]
 }
