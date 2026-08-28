@@ -119,10 +119,19 @@ def upload_detection(
         db.refresh(db_det)
 
         response = _format_detection(db_det)
-        # Surface model and verification info from the AI engine
+
+        # ---- 2-stage pipeline extra fields ----
         response["is_verified_species"] = result.get("is_verified_species", False)
-        response["model"] = result.get("model", "YOLO11")
-        response["model_note"] = result.get("model_note")
+        response["model"]               = result.get("model", "YOLO11")
+        response["model_note"]          = result.get("model_note")
+        response["pipeline_stages"]     = result.get("pipeline_stages", ["Stage1-YOLO"])
+        # IUCN extended fields
+        response["iucn_label"]          = result.get("iucn_label")
+        response["iucn_description"]    = result.get("iucn_description")
+        response["threat_level"]        = result.get("threat_level")
+        # GBIF taxonomy (richer than local catalog)
+        if result.get("taxonomy"):
+            response["taxonomy"] = result["taxonomy"]
 
         if background_tasks:
             background_tasks.add_task(AlertWorker.run_worker_task)

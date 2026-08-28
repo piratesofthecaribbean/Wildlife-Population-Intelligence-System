@@ -30,8 +30,12 @@ frontend/node_modules/
 frontend/dist/
 frontend/.env
 
-# ---------- ML / Model ----------
+# ---------- ML / Model & Downloads ----------
 model/runs/
+backend/models/
+*.tflite
+backend/test_*.jpg
+backend/test_*.wav
 
 # ---------- OS / IDE ----------
 .DS_Store

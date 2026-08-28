@@ -164,8 +164,11 @@ def test_detection_upload_flow():
     """E2E: image upload with GPS form fields should parse and return formatted detection."""
     token = _get_admin_token()
 
-    # Create fake image file
-    fake_img = io.BytesIO(b"fake image data")
+    # Create real 64x64 valid JPEG image
+    from PIL import Image
+    buf = io.BytesIO()
+    Image.new("RGB", (64, 64), color=(200, 100, 50)).save(buf, format="JPEG")
+    fake_img = io.BytesIO(buf.getvalue())
     fake_img.name = "test_tiger.jpg"
 
     res = client.post(
