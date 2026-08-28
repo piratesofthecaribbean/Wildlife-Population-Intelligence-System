@@ -359,28 +359,43 @@ def filter_duplicate_detections(
 # ---------------------------------------------------------------------------
 def _run_stage1(image: np.ndarray, det_model, conf_threshold: float = 0.25) -> List[Dict[str, Any]]:
     """Run YOLO on the full image; return raw detection list."""
+    if det_model is None or image is None:
+        return []
+    import torch
     h, w = image.shape[:2]
-    results = det_model.predict(source=image, conf=conf_threshold, verbose=False)
-    detections = []
-    for result in results:
-        if result.boxes is None:
-            continue
-        for box in result.boxes:
-            cls_id  = int(box.cls[0])
-            conf    = float(box.conf[0])
-            label   = result.names.get(cls_id, f"class_{cls_id}").lower()
-            if label in NON_ANIMAL_COCO:
+    try:
+        with torch.no_grad():
+            results = det_model.predict(
+                source=image,
+                conf=conf_threshold,
+                imgsz=min(640, max(h, w)),
+                device="cpu",
+                verbose=False,
+                max_det=10,
+            )
+        detections = []
+        for result in results:
+            if result.boxes is None:
                 continue
-            x1, y1, x2, y2 = [float(v) for v in box.xyxy[0].tolist()]
-            detections.append({
-                "label":      COCO_COARSE_MAP.get(label, label.title()),
-                "raw_label":  label,
-                "confidence": round(conf, 4),
-                "box":        [round(x1/w, 4), round(y1/h, 4), round(x2/w, 4), round(y2/h, 4)],
-                "box_pixels": [int(x1), int(y1), int(x2), int(y2)],
-                "is_verified_species": False,
-            })
-    return detections
+            for box in result.boxes:
+                cls_id  = int(box.cls[0])
+                conf    = float(box.conf[0])
+                label   = result.names.get(cls_id, f"class_{cls_id}").lower()
+                if label in NON_ANIMAL_COCO:
+                    continue
+                x1, y1, x2, y2 = [float(v) for v in box.xyxy[0].tolist()]
+                detections.append({
+                    "label":      COCO_COARSE_MAP.get(label, label.title()),
+                    "raw_label":  label,
+                    "confidence": round(conf, 4),
+                    "box":        [round(x1/w, 4), round(y1/h, 4), round(x2/w, 4), round(y2/h, 4)],
+                    "box_pixels": [int(x1), int(y1), int(x2), int(y2)],
+                    "is_verified_species": False,
+                })
+        return detections
+    except Exception as exc:
+        logger.warning("[Stage 1] YOLO detection note: %s. Continuing pipeline.", exc)
+        return []
 
 
 # ---------------------------------------------------------------------------
@@ -563,11 +578,11 @@ def run_full_inference(
     if image_bgr is None:
         raise ValueError("Cannot read image for inference.")
 
-    # Resize for efficient inference
+    # Resize for efficient inference (max 640px to minimize cloud RAM)
     h, w = image_bgr.shape[:2]
-    if max(h, w) > 1280:
-        scale = 1280 / max(h, w)
-        image_bgr = cv2.resize(image_bgr, (int(w * scale), int(h * scale)), cv2.INTER_AREA)
+    if max(h, w) > 640:
+        scale = 640.0 / max(h, w)
+        image_bgr = cv2.resize(image_bgr, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
 
     # Edge-preserving smoothing (ultra-fast, CPU-friendly)
     image_bgr = cv2.bilateralFilter(image_bgr, 5, 40, 40)
