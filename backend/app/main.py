@@ -38,9 +38,42 @@ app = FastAPI(
     openapi_url="/api/openapi.json",
 )
 
+def _seed_default_users():
+    """Ensure default demo accounts are present for authentication."""
+    try:
+        from app.database import SessionLocal
+        from app.models.user import User
+        from app.services.auth_service import hash_password
+
+        db = SessionLocal()
+        default_users = [
+            ("admin@wildlife.org", "admin123", "System Administrator", "Administrator"),
+            ("admin@wildlife.gov", "password123", "System Administrator", "Administrator"),
+            ("researcher@wildlife.gov", "password123", "Senior Wildlife Biologist", "Wildlife Researcher"),
+            ("officer@wildlife.gov", "password123", "Range Forest Officer", "Forest Department Officer"),
+            ("jane@wpis.org", "password123", "Dr. Jane Doe", "Wildlife Researcher"),
+        ]
+        for email, plain_pwd, name, role in default_users:
+            existing = db.query(User).filter(User.email == email).first()
+            if not existing:
+                db.add(User(
+                    email=email,
+                    full_name=name,
+                    role=role,
+                    hashed_password=hash_password(plain_pwd),
+                ))
+            else:
+                # Refresh password to ensure it matches
+                existing.hashed_password = hash_password(plain_pwd)
+        db.commit()
+        db.close()
+    except Exception as exc:
+        print(f"User seeding note: {exc}")
+
 @app.on_event("startup")
 def startup_event():
     import threading
+    _seed_default_users()
     # Run a single initial dispatch on startup
     threading.Thread(target=AlertWorker.run_worker_task, daemon=True).start()
 
